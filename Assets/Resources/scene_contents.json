@@ -1,0 +1,34 @@
+{
+	"game_objects": 
+		[
+			{
+				"type":"cube", 
+				"script":"hide_show_object.cs", 
+				"position":{
+	                "x": 7,
+	                "y": 5,
+	                "z": 10
+	            }
+            },
+
+			{
+				"type":"sphere", 
+				"script":"hide_other_objects.cs", 
+				"position":{
+	                "x": -10,
+	                "y": -3,
+	                "z": 4
+	            }
+            },
+
+            {
+				"type":"capsule", 
+				"script":"sound.cs", 
+				"position":{
+	                "x": 1,
+	                "y": 0,
+	                "z": 0
+	            }
+            }
+		]
+}
