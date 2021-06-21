@@ -1,6 +1,7 @@
 # Alias-Apps-Test
 Version is Unity 2019.4.28f1
 
+-	Used a third party JSON parser called SimpleJSON because Unity's JSON is annoying to use
  
 -	Main.scene will have the test.
 
