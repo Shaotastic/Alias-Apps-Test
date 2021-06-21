@@ -340,6 +340,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeName: game_objects
+  m_NodeNames:
+  - type
+  - script
+  - position
   m_Scripts:
   - {fileID: 11500000, guid: 70b41133956ff4ee28d8f57e979bd774, type: 3}
   - {fileID: 11500000, guid: 7792a3946e79f45d486c1a09617d888b, type: 3}

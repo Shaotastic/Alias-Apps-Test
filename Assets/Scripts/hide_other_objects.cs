@@ -2,26 +2,23 @@
 
 public class hide_other_objects : MonoBehaviour, IAction
 {
-    Renderer[] m_Objects;
+    GameObject[] m_Objects;
 
     bool m_Toggle;
+
+    /*First frame call, get all the objects that were generated from Game_Object_Collection
+     * and store them as a array for Renderers
+    */
     public void Start()
     {
-        var temp = Game_Object_Collection.GameObjects;
-
-        m_Objects = new Renderer[temp.Count];
-
-        for(int i = 0; i < m_Objects.Length; i++)
-        {
-            m_Objects[i] = temp[i].GetComponent<Renderer>();
-        }
+        m_Objects = Game_Object_Collection.GameObjects.ToArray();
 
         m_Toggle = gameObject.activeInHierarchy;        
     }
 
     public void Action()
     {
-        foreach(Renderer obj in m_Objects)
+        foreach(GameObject obj in m_Objects)
         {
             if(obj != null && !obj.GetComponent<hide_other_objects>())
             {
